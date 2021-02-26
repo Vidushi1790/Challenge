@@ -4,11 +4,14 @@
 #include "coding_question1.h"
 
 void setUp(void) { puts("\nsetUp() is called before each test_* function"); }
-void tearDown(void) { puts("tearDown() is called after each test_* function (unless test is ignored)"); }
+void tearDown(void) {
+  puts("tearDown() is called after each test_* function (unless test is "
+       "ignored)");
+}
 
 void test_get_quotient(void) {
   //
-  TEST_ASSERT_EQUAL(24, get_quotient(123.5, 5));
+  TEST_ASSERT_EQUAL(24, get_quotient(123, 5));
   TEST_ASSERT_EQUAL(200, get_quotient(1000, 5));
   TEST_ASSERT_EQUAL(0, get_quotient(5, 10000));
   TEST_ASSERT_EQUAL(100000, get_quotient(3000000, 30));
@@ -30,7 +33,7 @@ void test_get_remainder(void) {
   TEST_ASSERT_EQUAL(5, get_remainder(5, 10000));
   TEST_ASSERT_EQUAL(0, get_remainder(3000000, 30));
   TEST_ASSERT_EQUAL(0, get_remainder(0, 10));
-  TEST_ASSERT_EQUAL(0, get_remainder(1020.20, 20));
+  TEST_ASSERT_EQUAL(0, get_remainder(1020, 20));
   TEST_ASSERT_EQUAL(3, get_remainder(123.5, 5));
   TEST_ASSERT_EQUAL(1, get_remainder(1, 65535));
   TEST_ASSERT_EQUAL(4, get_remainder(214, 5));

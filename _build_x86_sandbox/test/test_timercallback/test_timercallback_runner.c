@@ -73,7 +73,7 @@ static void run_test(UnityTestFunction func, const char* name, int line_num)
 int main(void)
 {
   UnityBegin("projects/x86_sandbox/test/test_timercallback.c");
-  run_test(test_timer_periodic_task, "test_timer_periodic_task", 21);
+  run_test(test_timer_periodic_task, "test_timer_periodic_task", 24);
 
   return UnityEnd();
 }

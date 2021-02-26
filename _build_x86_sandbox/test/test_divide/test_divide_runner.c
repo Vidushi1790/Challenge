@@ -73,8 +73,8 @@ static void run_test(UnityTestFunction func, const char* name, int line_num)
 int main(void)
 {
   UnityBegin("projects/x86_sandbox/test/test_divide.c");
-  run_test(test_get_quotient, "test_get_quotient", 9);
-  run_test(test_get_remainder, "test_get_remainder", 27);
+  run_test(test_get_quotient, "test_get_quotient", 12);
+  run_test(test_get_remainder, "test_get_remainder", 30);
 
   return UnityEnd();
 }

@@ -5,7 +5,10 @@
 #include "coding_question2.h"
 
 void setUp(void) { puts("\nsetUp() is called before each test_* function"); }
-void tearDown(void) { puts("tearDown() is called after each test_* function (unless test is ignored)"); }
+void tearDown(void) {
+  puts("tearDown() is called after each test_* function (unless test is "
+       "ignored)");
+}
 
 bool timer_callback_stub(timer_s *timer, int index) {
   // first time this function is called, remaining_timer will be zero

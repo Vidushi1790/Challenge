@@ -4,6 +4,16 @@
 #include "coding_question1.h"
 
 static const unsigned divide_by_zero = 0;
+static const unsigned number_divided_by = 3;
+static const unsigned number_to_be_divided = 2000;
+
+void question_one(void) {
+  divider_s result;
+  divide(&result, number_to_be_divided, number_divided_by);
+
+  printf("Quotient: %d\r\n", result.quotient);
+  printf("Remainder: %d\r\n", result.remainder);
+}
 
 unsigned get_quotient(unsigned number, unsigned divide_by) {
   unsigned quotient = divide_by_zero;

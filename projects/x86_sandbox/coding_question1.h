@@ -5,6 +5,7 @@ typedef struct {
   unsigned remainder;
 } divider_s;
 
+void question_one(void);
 unsigned get_remainder(unsigned number, unsigned divide_by);
 unsigned get_quotient(unsigned number, unsigned divide_by);
 void divide(divider_s *answer, unsigned number, unsigned divide_by);
