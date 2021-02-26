@@ -23,4 +23,6 @@ static const unsigned number_to_be_divided = 2000;
 * Corresponding test cases is written in the test_timercallback.c file in the test folder. 
 1. @projects->x86_sandbox->test->test_timercallback.c
 
+### Main file contains the execution of question1 and question2.
+
 
